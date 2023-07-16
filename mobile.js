@@ -21,7 +21,7 @@ let set1=0;
 let i12=0;
 function set123(event){
    set1=event.target.previousElementSibling.firstElementChild.getAttribute("class");
-   if(set1=="cardsbc"){
+   if(set1=="cardsb"){
     document.getElementsByClassName("left_arrow")[0].addEventListener("click",reset123);
     document.getElementsByClassName("left_arrow")[0].style.color="black";
     i1++;
@@ -37,7 +37,7 @@ function set123(event){
    let pos1=0,pos2=0;
    let count1=0;
    function move(){
-      if(set1=="cardsbc"){
+      if(set1=="cardsb"){
          console.log(set1);
          pos1=pos1-0.824;
          pos=pos1;
@@ -52,7 +52,7 @@ function set123(event){
  for(let i=0;i<document.getElementsByClassName(set1).length;i++){
     document.getElementsByClassName(set1)[i].style.translate=`${pos}vw`;
  }
- if(count==100 && set1=="cardsbc"){
+ if(count==100 && set1=="cardsb"){
     console.log(pos1);
     clearInterval(a112);
     count=0;
@@ -75,7 +75,7 @@ function set123(event){
 let a113;
 function reset123(event){
    set1=event.target.nextElementSibling.firstElementChild.getAttribute("class");
-   if(set1=="cardsbc"){
+   if(set1=="cardsb"){
       document.getElementsByClassName("right_arrow")[0].addEventListener("click",set123);
       document.getElementsByClassName("right_arrow")[0].style.color="black";
       i1--;
@@ -91,7 +91,7 @@ function reset123(event){
 }
 
 function move1(){
-   if(set1=="cardsbc"){
+   if(set1=="cardsb"){
       console.log(set1);
       pos1=pos1+0.824;
       pos=pos1;
@@ -107,7 +107,7 @@ function move1(){
 for(let i=0;i<document.getElementsByClassName(set1).length;i++){
  document.getElementsByClassName(set1)[i].style.translate=`${pos}vw`;
 }
-if(count==100 && set1=="cardsbc"){
+if(count==100 && set1=="cardsb"){
    console.log(pos1);
    clearInterval(a113);
  count=0;
