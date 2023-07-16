@@ -747,6 +747,9 @@ background-color: rgb(35, 34, 34);
     align-items: center;
     margin-bottom:15vw;
   }
+  #try_now{
+    visibility: visible;
+  }
   #try_now,#browse_all{
     padding:0px;
     box-sizing: border-box;
