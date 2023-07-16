@@ -1,6 +1,6 @@
-// document.getElementById("browse_all").remove();
-// document.getElementById("sortByrel").remove();
-// document.getElementById("right_most").remove();
+document.getElementById("browse_all").remove();
+document.getElementById("sortByrel").remove();
+document.getElementById("right_most").remove();
 
 let a2=document.getElementById("third_se");
 a2.outerHTML=`<div class="with_arrow"><div class="left_arrow">&#8249;</div>${a2.outerHTML}<div class="right_arrow">›</div></div>`
