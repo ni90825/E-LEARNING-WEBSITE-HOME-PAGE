@@ -1071,8 +1071,9 @@ background-color: rgb(35, 34, 34);
 .nav-menu {
   visibility: hidden;
   position: fixed;
-  left: -200vw;
-  top: 3rem;
+  top: -200vw;
+  /* top: 3rem; */
+  left:-8vw;
   flex-direction: column;
   background-color:rgb(63, 63, 63);
   width: 100%;
@@ -1088,6 +1089,7 @@ background-color: rgb(35, 34, 34);
   font-family: 'Dosis', sans-serif;
 }
 .nav-menu.active {
+  top:8vw;
   left:-8vw;
   visibility: visible;
 }
